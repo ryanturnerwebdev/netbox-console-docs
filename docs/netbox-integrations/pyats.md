@@ -1,7 +1,7 @@
 # Getting Started With NetBox, PyATS and Genie
 
-!!! info "Learn More"
-    You can view an on-demand Webinar [Getting Started with Network Test Automation: NetBox + pyATS](https://netboxlabs.com/events/webinar-getting-started-with-network-test-automation-netbox-pyats-genie/) hosted by NetBox Labs. 
+:::info "Learn More"
+    You can view an on-demand Webinar [Getting Started with Network Test Automation: NetBox + pyATS](https://netboxlabs.com/events/webinar-getting-started-with-network-test-automation-netbox-pyats-genie/) hosted by NetBox Labs.
 
 ## Code Examples
 All code used in the examples below can be found in the NetBox Learning [git repository](https://github.com/netboxlabs/netbox-learning), in the directory `netbox-pyats-webinar`.
@@ -22,19 +22,19 @@ All code used in the examples below can be found in the NetBox Learning [git rep
     ```
     python3 -m pip install --upgrade pip
     ```
-4. Install PyATS: 
+4. Install PyATS:
 
-    As per the official [documentation](https://developer.cisco.com/docs/pyats/api/), there are a options to perform a minimal installation (option 1) or a full installation (opton 2).  
+    As per the official [documentation](https://developer.cisco.com/docs/pyats/api/), there are a options to perform a minimal installation (option 1) or a full installation (opton 2).
 
     **Option 1**
-    Minimal install that includes the Genie library and that allows you to use the interactive testbed creation command to create your testbed files from NetBox: 
+    Minimal install that includes the Genie library and that allows you to use the interactive testbed creation command to create your testbed files from NetBox:
     ```
     pip install pyats[library]
     pip install pyats.contrib
     ```
 
     **Option 2**
-    Full installation that includes all packages and libraries: 
+    Full installation that includes all packages and libraries:
     ```
     pip install pyats[full]
     ```
@@ -44,18 +44,18 @@ All code used in the examples below can be found in the NetBox Learning [git rep
     ```
     pip install "pyats[full]"
     ```
-    
-    !!! Note
-        If you plan to run the example script `ospf_neighbor_table.py` then you will also need to install the `prettytable` library with `pip install prettytable` or you can simply run the command `pip install -r requirements.txt` to install this along with pyATS, Genie and the `contrib` library. 
 
-    There is also a [PyATS Docker Image](https://developer.cisco.com/codeexchange/github/repo/CiscoTestAutomation/pyats-docker). This command will pull down the container if you don't have it locally and drop you into a Bash shell: 
+    !!! Note
+        If you plan to run the example script `ospf_neighbor_table.py` then you will also need to install the `prettytable` library with `pip install prettytable` or you can simply run the command `pip install -r requirements.txt` to install this along with pyATS, Genie and the `contrib` library.
+
+    There is also a [PyATS Docker Image](https://developer.cisco.com/codeexchange/github/repo/CiscoTestAutomation/pyats-docker). This command will pull down the container if you don't have it locally and drop you into a Bash shell:
     ```
     docker run -it ciscotestautomation/pyats:latest /bin/bash
     ```
 
 ## Lab Network
 
-Our lab network consists of 2 x Cisco CSR100V routers and they are documented in NetBox under the Site `PyATS Webinar` and are directly connected to each other over port `GigabitEthernet2` on the `192.168.1.0/30` subnet. They are both running OSPF, and you can find the the configuration for this in the [initial_device_configs.md](https://github.com/netboxlabs/netbox-learning/blob/develop/netbox-pyats-webinar/initial_device_configs.md) file: 
+Our lab network consists of 2 x Cisco CSR100V routers and they are documented in NetBox under the Site `PyATS Webinar` and are directly connected to each other over port `GigabitEthernet2` on the `192.168.1.0/30` subnet. They are both running OSPF, and you can find the the configuration for this in the [initial_device_configs.md](https://github.com/netboxlabs/netbox-learning/blob/develop/netbox-pyats-webinar/initial_device_configs.md) file:
 
   ![lab topology](../images/integrations/pyats/pyats-webinar-devices.png)
 
@@ -64,7 +64,7 @@ Our lab network consists of 2 x Cisco CSR100V routers and they are documented in
 ### Generating The testbed file Dynamically from NetBox Inventory
 
 **Option 1**
-Use the `pyats create testbed netbox` command to build your testbed file. Note that where a value is prefixed with `os.getenv` or `%ENV` then these values are being pulled in from the local environment variables that you need to set with the `export` command eg. `export NETBOX_URL=https://example.cloud.netboxapp.com/`, `export DEF_PYATS_USER=admin`: 
+Use the `pyats create testbed netbox` command to build your testbed file. Note that where a value is prefixed with `os.getenv` or `%ENV` then these values are being pulled in from the local environment variables that you need to set with the `export` command eg. `export NETBOX_URL=https://example.cloud.netboxapp.com/`, `export DEF_PYATS_USER=admin`:
 
 ```
 pyats create testbed netbox \
@@ -77,20 +77,20 @@ pyats create testbed netbox \
 --topology
 ```
 
-In this example we are generating a testbed file called `testbed.yaml` and filtering NetBox by the site name `pyats-webinar`. When you hit enter the output will look like this: 
+In this example we are generating a testbed file called `testbed.yaml` and filtering NetBox by the site name `pyats-webinar`. When you hit enter the output will look like this:
 
 ```
 Begin retrieving data from netbox...
 Configuring testbed default credentials.
 Retrieving associated data for CSR1...
 Retrieving associated data for CSR2...
-Testbed file generated: 
-testbed.yaml 
+Testbed file generated:
+testbed.yaml
 ```
 **Option 2**
 Run the `generate_testbed_file.py` Python script. Note that where a value is prefixed with `os.getenv` or `%ENV` then these values are being pulled in from the local environment variables that you need to set with the `export` command eg. `export NETBOX_URL=https://example.cloud.netboxapp.com/`, `export DEF_PYATS_USER=admin`.
 
-In this script we are generating a testbed file called `testbed.yaml` and filtering NetBox by the site name `pyats-webinar`, but you could just as easily filter on other fields as in the examples commented out: 
+In this script we are generating a testbed file called `testbed.yaml` and filtering NetBox by the site name `pyats-webinar`, but you could just as easily filter on other fields as in the examples commented out:
 
 ```
 # Description: This script generates a testbed file based on the Netbox data
@@ -130,7 +130,7 @@ with open("testbed.yaml", "w") as f:
     f.write(tb_yaml)
 ```
 
-The resulting testbed file produced by either option will look something like this, depending on your network. Note that as we included the `--topology` switch the testbed file output includes the interfaces and connections from NetBox also: 
+The resulting testbed file produced by either option will look something like this, depending on your network. Note that as we included the `--topology` switch the testbed file output includes the interfaces and connections from NetBox also:
 ```
 devices:
   CSR1:
@@ -209,16 +209,16 @@ topology:
 
 ## Structured Data Vs Unstructured Data
 
-When you run a command at the CLI of a network device, you get unstructured data back as the response, which is just a blob of text: 
+When you run a command at the CLI of a network device, you get unstructured data back as the response, which is just a blob of text:
 ```
-CSR1#sh ip interface brief 
+CSR1#sh ip interface brief
 Interface              IP-Address      OK? Method Status                Protocol
-GigabitEthernet1       10.0.0.15       YES manual up                    up      
-GigabitEthernet2       192.168.1.1     YES manual up                    up      
-Loopback0              1.1.1.1         YES manual up                    up  
+GigabitEthernet1       10.0.0.15       YES manual up                    up
+GigabitEthernet2       192.168.1.1     YES manual up                    up
+Loopback0              1.1.1.1         YES manual up                    up
 ```
 
-This is great for humans, as we can read this, but a computer cannot understand this data. Also if the next version of the OS you are using makes a change to the way that the output is formatted then you will have a problem and have to re-write your scripts to handle this. This is where the Genie parser comes into play as it will parse the output into structured data. The data is then represented using key/value pairs in JSON format that can be used by a computer: 
+This is great for humans, as we can read this, but a computer cannot understand this data. Also if the next version of the OS you are using makes a change to the way that the output is formatted then you will have a problem and have to re-write your scripts to handle this. This is where the Genie parser comes into play as it will parse the output into structured data. The data is then represented using key/value pairs in JSON format that can be used by a computer:
 
 ```
 {
@@ -250,11 +250,11 @@ This is great for humans, as we can read this, but a computer cannot understand 
 
 ## Running Your First Tests With The Genie CLI
 
-### Genie Parsing 
+### Genie Parsing
 
-There are parsers available for a large number of network OS's (not just Cisco), and you can view the complete list [here](https://pubhub.devnetcloud.com/media/genie-feature-browser/docs/#/parsers. 
+There are parsers available for a large number of network OS's (not just Cisco), and you can view the complete list [here](https://pubhub.devnetcloud.com/media/genie-feature-browser/docs/#/parsers.
 )
-In this example we will run the `genie parse` command to parse the output of the `show ip ospf neighbor` command and limit it to just device `CSR1`: 
+In this example we will run the `genie parse` command to parse the output of the `show ip ospf neighbor` command and limit it to just device `CSR1`:
 
 ```
 genie parse 'show ip ospf neighbor' --testbed-file testbed.yaml --device CSR1
@@ -293,16 +293,16 @@ genie parse 'show ip ospf neighbor' --testbed-file testbed.yaml --device CSR1 --
 
 ### Genie Learning
 
-In this example we will run the `genie learn` command to learn all about `routing` and `ospf` for both devices in our testbed file. We will also save the output into directory called `pre-change`. Genie will automagically create directories for us if they don't already exist. 
+In this example we will run the `genie learn` command to learn all about `routing` and `ospf` for both devices in our testbed file. We will also save the output into directory called `pre-change`. Genie will automagically create directories for us if they don't already exist.
 
-For reference if you run the `genie learn all` command then for IOS-XE devices the list of features learned is: 
+For reference if you run the `genie learn all` command then for IOS-XE devices the list of features learned is:
 
 ```
 acl, arp, bgp, device, dot1x, eigrp, fdb, hsrp, igmp, interface, isis, lag, lisp, lldp, mcast, mld, msdp, nd, ntp, ospf, pim, platform, prefix_list, rip, route_policy, routing, static_routing, stp, terminal, utils, vlan, vrf, vxlan, config
 ```
 
 ```
-genie learn routing ospf --testbed-file testbed.yaml --output pre-change  
+genie learn routing ospf --testbed-file testbed.yaml --output pre-change
 
 Learning '['routing', 'ospf']' on devices '['CSR1', 'CSR2']'
 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:11<00:00,  5.85s/it]
@@ -339,7 +339,7 @@ Learning '['routing', 'ospf']' on devices '['CSR1', 'CSR2']'
 ```
 
 ## Making a Change to The Network
-Let's make a small change to the `CSR2` router in our test network, and remove the `network 2.2.2.2 0.0.0.0 area 0` statement from the OSPF configuration: 
+Let's make a small change to the `CSR2` router in our test network, and remove the `network 2.2.2.2 0.0.0.0 area 0` statement from the OSPF configuration:
 
 ```
 CSR2#conf t
@@ -348,10 +348,10 @@ CSR2(config)#router ospf 1
 CSR2(config-router)#no network 2.2.2.2 0.0.0.0 area 0
 ```
 
-Next lets re-learn `routing` and `ospf` for both devices in our testbed file. We will also save the output into directory called `post-change`: 
+Next lets re-learn `routing` and `ospf` for both devices in our testbed file. We will also save the output into directory called `post-change`:
 
 ```
-genie learn routing ospf --testbed-file testbed.yaml --output post-change                  
+genie learn routing ospf --testbed-file testbed.yaml --output post-change
 
 Learning '['routing', 'ospf']' on devices '['CSR1', 'CSR2']'
 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:11<00:00,  5.84s/it]
@@ -388,10 +388,10 @@ Learning '['routing', 'ospf']' on devices '['CSR1', 'CSR2']'
 ```
 
 ## Genie Diff
-Now let's use the `genie diff` command to tell us what changed in our network, and we will store the output in a directory called `routing-diff`: 
+Now let's use the `genie diff` command to tell us what changed in our network, and we will store the output in a directory called `routing-diff`:
 
 ```
-genie diff pre-change post-change --output diff 
+genie diff pre-change post-change --output diff
 1it [00:00, 333.44it/s]
 +==============================================================================+
 | Genie Diff Summary between directories pre-change/ and post-change/          |
@@ -410,10 +410,10 @@ genie diff pre-change post-change --output diff
 |------------------------------------------------------------------------------|
 ```
 
-There are differences in the outputs of both the `routing_iosxe_CSR1_ops.txt` and `ospf_iosxe_CSR2_ops.txt` files and we can view the contents of those files to see what has changed: 
+There are differences in the outputs of both the `routing_iosxe_CSR1_ops.txt` and `ospf_iosxe_CSR2_ops.txt` files and we can view the contents of those files to see what has changed:
 
 ```
-cat diff/diff_routing_iosxe_CSR1_ops.txt 
+cat diff/diff_routing_iosxe_CSR1_ops.txt
 --- pre-change/routing_iosxe_CSR1_ops.txt
 +++ post-change/routing_iosxe_CSR1_ops.txt
  info:
@@ -435,10 +435,10 @@ cat diff/diff_routing_iosxe_CSR1_ops.txt
 -       route: 2.2.2.2/32
 -       route_preference: 110
 -       source_protocol: ospf
--       source_protocol_codes: O%  
+-       source_protocol_codes: O%
 ```
 ```
-cat diff/diff_ospf_iosxe_CSR2_ops.txt   
+cat diff/diff_ospf_iosxe_CSR2_ops.txt
 --- pre-change/ospf_iosxe_CSR2_ops.txt
 +++ post-change/ospf_iosxe_CSR2_ops.txt
  info:
@@ -458,7 +458,7 @@ cat diff/diff_ospf_iosxe_CSR2_ops.txt
 -           demand_circuit: False
 -           enable: True
 -           interface_type: loopback
--           name: Loopback0% 
+-           name: Loopback0%
 ```
 
 As we can see, CSR1 has lost the the route to the `2.2.2.2/32` prefix and on CSR2 the interface `lo0` has been removed from `OSPF area 0`.
@@ -466,13 +466,13 @@ As we can see, CSR1 has lost the the route to the `2.2.2.2/32` prefix and on CSR
 
 ## pyATS and Python
 
-As you would expect, it is also very easy to work with pyATS and python. Type `python` in your terminal, and then start by importing the `load` module from the `genie.testbed` library and load the testbed file: 
+As you would expect, it is also very easy to work with pyATS and python. Type `python` in your terminal, and then start by importing the `load` module from the `genie.testbed` library and load the testbed file:
 
 ```
 from genie.testbed import load
-testbed = load('testbed.yaml') 
+testbed = load('testbed.yaml')
 ```
-Then connect to the CSR1 device: 
+Then connect to the CSR1 device:
 ```
 device = testbed.devices['CSR1']
 device.connect()
@@ -480,7 +480,7 @@ device.connect()
 Then parse the command `show ip interface brief` and print the output nicely using the `pprint` library:
 ```
 parsed_data = device.parse('show ip interface brief')
-from pprint import pprint 
+from pprint import pprint
 pprint(parsed_data)
 {'interface': {'GigabitEthernet1': {'interface_is_ok': 'YES',
                                     'ip_address': '10.0.0.15',
@@ -521,19 +521,19 @@ So far we have only scratched the surface of what you can do with pyATS, and tes
 
 I have included an example test script called `connectivity_check.py`, which is adapted from the example script in the [official documentation](https://developer.cisco.com/docs/pyats/api/). This script tests that both CSR1 and CSR2 can ping each other's loopback addresses. Test scripts are structured Python files that contain/describe the testing you want to do. A clean, elegant test script is scalable, and generates easy-to-read test results and logs.
 
-To run the example test script, you must also specify the testbed file that is to be used, for example: 
+To run the example test script, you must also specify the testbed file that is to be used, for example:
 
 ```
 python connectivity_check.py --testbed testbed.yaml
 ```
 
-Once the test script has been run then the results are displayed in the output: 
+Once the test script has been run then the results are displayed in the output:
 
 ```
 2024-04-23T11:50:16: %AETEST-INFO: +------------------------------------------------------------------------------+
 2024-04-23T11:50:16: %AETEST-INFO: |                               Detailed Results                               |
 2024-04-23T11:50:16: %AETEST-INFO: +------------------------------------------------------------------------------+
-2024-04-23T11:50:16: %AETEST-INFO:  SECTIONS/TESTCASES                                                      RESULT   
+2024-04-23T11:50:16: %AETEST-INFO:  SECTIONS/TESTCASES                                                      RESULT
 2024-04-23T11:50:16: %AETEST-INFO: --------------------------------------------------------------------------------
 2024-04-23T11:50:16: %AETEST-INFO: .
 2024-04-23T11:50:16: %AETEST-INFO: |-- common_setup                                                          PASSED
@@ -554,15 +554,15 @@ Once the test script has been run then the results are displayed in the output:
 2024-04-23T11:50:16: %AETEST-INFO: +------------------------------------------------------------------------------+
 2024-04-23T11:50:16: %AETEST-INFO: |                                   Summary                                    |
 2024-04-23T11:50:16: %AETEST-INFO: +------------------------------------------------------------------------------+
-2024-04-23T11:50:16: %AETEST-INFO:  Number of ABORTED                                                            0 
-2024-04-23T11:50:16: %AETEST-INFO:  Number of BLOCKED                                                            0 
-2024-04-23T11:50:16: %AETEST-INFO:  Number of ERRORED                                                            0 
-2024-04-23T11:50:16: %AETEST-INFO:  Number of FAILED                                                             0 
-2024-04-23T11:50:16: %AETEST-INFO:  Number of PASSED                                                             4 
-2024-04-23T11:50:16: %AETEST-INFO:  Number of PASSX                                                              0 
-2024-04-23T11:50:16: %AETEST-INFO:  Number of SKIPPED                                                            0 
-2024-04-23T11:50:16: %AETEST-INFO:  Total Number                                                                 4 
-2024-04-23T11:50:16: %AETEST-INFO:  Success Rate                                                            100.0% 
+2024-04-23T11:50:16: %AETEST-INFO:  Number of ABORTED                                                            0
+2024-04-23T11:50:16: %AETEST-INFO:  Number of BLOCKED                                                            0
+2024-04-23T11:50:16: %AETEST-INFO:  Number of ERRORED                                                            0
+2024-04-23T11:50:16: %AETEST-INFO:  Number of FAILED                                                             0
+2024-04-23T11:50:16: %AETEST-INFO:  Number of PASSED                                                             4
+2024-04-23T11:50:16: %AETEST-INFO:  Number of PASSX                                                              0
+2024-04-23T11:50:16: %AETEST-INFO:  Number of SKIPPED                                                            0
+2024-04-23T11:50:16: %AETEST-INFO:  Total Number                                                                 4
+2024-04-23T11:50:16: %AETEST-INFO:  Success Rate                                                            100.0%
 2024-04-23T11:50:16: %AETEST-INFO: --------------------------------------------------------------------------------
 ```
 

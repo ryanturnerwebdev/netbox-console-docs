@@ -1,14 +1,14 @@
 # Working with NetBox Cloud Database Backups
 
-Within the NetBox Labs [Console](https://console.netboxlabs.com/dashboard/) you can access the backups of your NetBox Cloud database, and are able to perform the following actions:  
+Within the NetBox Labs [Console](https://console.netboxlabs.com/dashboard/) you can access the backups of your NetBox Cloud database, and are able to perform the following actions:
 
 - View a list of all available database backups
 - Take an 'On Demand' backup at any time
-- Download a local copy of a specific backup file  
+- Download a local copy of a specific backup file
 - Restore your NetBox Cloud instance from a database backup
 
 <!-- COMMENTING VIDEO OUT OF CODE!
-Watch this quick video or follow the steps outlined below to get started: 
+Watch this quick video or follow the steps outlined below to get started:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1YnQhsC6KFQ?si=q4JyPGQIbN-Q_0Yv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
 
@@ -24,7 +24,7 @@ Watch this quick video or follow the steps outlined below to get started:
 
 ## Take an 'On Demand' Database Backup
 
-1. From within the **Backup and Restore** panel click on **Back Up Now**, on the right-hand side: 
+1. From within the **Backup and Restore** panel click on **Back Up Now**, on the right-hand side:
 
     ![back up now](../images/backups/backup_now.png)
 
@@ -32,7 +32,7 @@ Watch this quick video or follow the steps outlined below to get started:
 
     ![confirm backup](../images/backups/confirm_backup.png)
 
-3. After a short while you will see the **On Demand** backup you just created appear in the list of available backups: 
+3. After a short while you will see the **On Demand** backup you just created appear in the list of available backups:
 
     ![on demand backup taken](../images/backups/list_backups.png)
 
@@ -42,7 +42,7 @@ Watch this quick video or follow the steps outlined below to get started:
 
     ![download backup](../images/backups/download_backup.png)
 
-2. The download will then be prepared: 
+2. The download will then be prepared:
 
     ![prepare download](../images/backups/prepare_download.png)
 
@@ -64,11 +64,11 @@ Watch this quick video or follow the steps outlined below to get started:
 
     ![completed restore](../images/backups/restore_history_2.png)
 
-4. Your database restore is now complete. 
+4. Your database restore is now complete.
 
-!!! info
-    Once the database restore is complete your NetBox Cloud instance will restart, and you may briefly see a `503 - Service Unavailable` message when you browse to the Web interface. This is normal and will clear after a short while, after which you can log in again. 
-    
+:::info
+    Once the database restore is complete your NetBox Cloud instance will restart, and you may briefly see a `503 - Service Unavailable` message when you browse to the Web interface. This is normal and will clear after a short while, after which you can log in again.
+
     Also, please be aware that the NetBox changelog will be empty when you first log in after a database restore.
 
 If you encounter any issues while working with database backups raise a support ticket by emailing the [NetBox Labs Support Team](mailto:support@netboxlabs.com)

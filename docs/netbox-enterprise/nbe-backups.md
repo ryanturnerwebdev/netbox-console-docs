@@ -10,7 +10,7 @@ For each type of datastore you can choose to use a built-in deployment, or confi
 
 ## External Databases
 
-!!! info
+:::info
     If you are providing your own database(s) for use by NetBox Enterprise, it is expected that you have your own processes for high availability, backup, and restore.
 
 ## Using Disaster Recovery for Backups
@@ -53,7 +53,7 @@ This feature is included in NetBox Enterprise installs, and can be enabled by in
 
 Besides disaster recovery, it is also a good idea to keep backups of your data in case you want to view, partially restore, or move your data to another system.
 
-!!! info "NetBox Enterprise Namespace"
+:::info "NetBox Enterprise Namespace"
     The default namespace is `kotsadm`.
 
     The instructions below default to `kotsadm`, but you can change the `NETBOX_NAMESPACE` export to match your system.

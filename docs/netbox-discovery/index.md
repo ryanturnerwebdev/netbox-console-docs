@@ -2,7 +2,7 @@
 <span class="pill pill-enterprise">NetBox Enterprise</span>
 <span class="pill pill-community">NetBox Community</span>
 
-!!! info "*Public Preview*"
+:::info "*Public Preview*"
     **NetBox Discovery** is currently in Public Preview. Please refer to [NetBox Labs Product and Feature Lifecycle](https://docs.netboxlabs.com/product_feature_lifecycle/) to get more details. We actively welcome feedback to help identify and prioritize bugs, new features and areas of improvement.
 
 NetBox Discovery is an advanced network discovery tool designed to simplify documenting your network and help detect network drift. It extends NetBox by providing automated network and device discovery capabilities.
@@ -28,4 +28,3 @@ NetBox Discovery leverages network protocols (such as SSH, ICMP, UDP, TCP) to di
 
 ---
 By leveraging **NetBox Discovery**, organizations can enhance their network visibility, streamline IT operations, and maintain an accurate source of truth for their network infrastructure.
-

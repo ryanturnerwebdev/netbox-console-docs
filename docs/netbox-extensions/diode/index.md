@@ -1,10 +1,10 @@
 # Diode
 
-!!! info "Currently in Public Preview"
+:::info "Currently in Public Preview"
 
     The Diode project is currently in _Public Preview_. Please see [NetBox Labs Product and Feature Lifecycle](https://docs.netboxlabs.com/product_feature_lifecycle/) for more details.
 
-## Overview 
+## Overview
 
 Diode is a NetBox data ingestion service that aims to simplify and enhance the process to add and update network data in NetBox. The guiding principle behind Diode is to make it as easy as possible to get data into NetBox by removing as much burden as possible from the user while shifting that effort to technology.
 
