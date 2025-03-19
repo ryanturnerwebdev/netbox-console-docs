@@ -60,7 +60,7 @@ Enter the password you created in the installer CLI.
 
 **Do not** configure additional nodes, it is currently not supported.
 
-!!! danger "Multi-Node Clusters"
+:::danger "Multi-Node Clusters"
     Adding nodes to the cluster is **currently not supported**.
 
 ![Screenshot: Nodes](../images/netbox-enterprise/installation/ent-04-cluster.png){ style="max-width: 75%" }
