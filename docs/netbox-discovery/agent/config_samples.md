@@ -1,8 +1,8 @@
 # Configuration Samples
 
-<span class="pill pill-cloud">NetBox Cloud</span>
-<span class="pill pill-enterprise">NetBox Enterprise</span>
-<span class="pill pill-community">NetBox Community</span>
+<span className="pill pill-cloud">NetBox Cloud</span>
+<span className="pill pill-enterprise">NetBox Enterprise</span>
+<span className="pill pill-community">NetBox Community</span>
 
 Here is a collection of configuration samples supported by orb agent
 
@@ -11,7 +11,7 @@ This sample configuration file demonstrates the device discovery backend connect
 
 ```yaml
 orb:
-  config_manager: 
+  config_manager:
     active: local
   backends:
     device_discovery:

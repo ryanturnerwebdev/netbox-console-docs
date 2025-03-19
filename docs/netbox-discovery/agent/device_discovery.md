@@ -1,8 +1,8 @@
 # Device Discovery
 
-<span class="pill pill-cloud">NetBox Cloud</span>
-<span class="pill pill-enterprise">NetBox Enterprise</span>
-<span class="pill pill-community">NetBox Community</span>
+<span className="pill pill-cloud">NetBox Cloud</span>
+<span className="pill pill-enterprise">NetBox Enterprise</span>
+<span className="pill pill-community">NetBox Community</span>
 
 The device discovery backend leverages [NAPALM](https://napalm.readthedocs.io/en/latest/index.html) to connect to network devices and collect network information.
 
@@ -23,7 +23,7 @@ orb:
 ```
 
 ## Policy
-Device discovery policies are broken down into two subsections: `config` and `scope`. 
+Device discovery policies are broken down into two subsections: `config` and `scope`.
 
 ### Config
 Config defines data for the whole scope and is optional overall.
@@ -41,7 +41,7 @@ Current supported defaults:
 | site  |  NetBox Site Name |
 
 ### Scope
-The scope defines a list of devices that can be accessed and pulled data. 
+The scope defines a list of devices that can be accessed and pulled data.
 
 | Parameter | Type | Required | Description |
 |:---------:|:----:|:--------:|:-----------:|
@@ -80,7 +80,7 @@ This sample configuration file demonstrates the device discovery backend connect
 
 ```yaml
 orb:
-  config_manager: 
+  config_manager:
     active: local
   backends:
     device_discovery:

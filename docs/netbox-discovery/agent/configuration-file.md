@@ -1,6 +1,6 @@
-<span class="pill pill-cloud">NetBox Cloud</span>
-<span class="pill pill-enterprise">NetBox Enterprise</span>
-<span class="pill pill-community">NetBox Community</span>
+<span className="pill pill-cloud">NetBox Cloud</span>
+<span className="pill pill-enterprise">NetBox Enterprise</span>
+<span className="pill pill-community">NetBox Community</span>
 
 ## Agent configuration file
 To run, the NetBox Discovery agent requires a YAML configuration file. This configuration file consists of three main sections: `config_manager`, `backends`, and `policies`.
@@ -19,7 +19,7 @@ orb:
 Currently, only the `local` manager is supported, which retrieves policies from the local configuration file passed to the agent.
 
 ### Backends
-The `backends` section specifies what Orb agent backends should be enabled. Each Orb agent backend offers specific discovery or observability capabilities and may require specific configuration information.  
+The `backends` section specifies what Orb agent backends should be enabled. Each Orb agent backend offers specific discovery or observability capabilities and may require specific configuration information.
 
 ```yaml
 orb:
@@ -30,7 +30,7 @@ orb:
     device_discovery:
         ...
 ```
-Only the `network_discovery` and `device_discovery` backends are currently supported and they do not require any special configuration. Refer to [Device Discovery](device_discovery.md) and [Network Discovery](network_discovery.md) for policy settings specific to each backend. 
+Only the `network_discovery` and `device_discovery` backends are currently supported and they do not require any special configuration. Refer to [Device Discovery](device_discovery.md) and [Network Discovery](network_discovery.md) for policy settings specific to each backend.
 
 #### Commons
 A special `common` subsection of `backends` defines configuration settings that are shared with all backends. Currently, it supports passing [diode](https://github.com/netboxlabs/diode) server settings to all backends.

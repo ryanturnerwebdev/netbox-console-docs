@@ -7,7 +7,7 @@ hide:
 
 The home of documentation for NetBox [Cloud](Administration%20Console/console-access.md), [Enterprise](netbox-enterprise/nbe-overview.md), [Integrations](netbox-integrations/netbox-ansible-collection.md), [SDKs](sdks/pynetbox.md) and [Extensions](netbox-extensions/diode/index.md).
 
-<div class="grid cards" markdown="1">
+<div className="grid cards" markdown="1">
 
 - <div style={{display: 'flex', alignItems: 'center'}}><img src={require('./images/netbox-favicon.png').default} width="30" style={{marginRight: '10px'}}/> __NetBox Cloud__</div>
 
@@ -31,7 +31,7 @@ The home of documentation for NetBox [Cloud](Administration%20Console/console-ac
 
 ## NetBox Labs Products & Integrations
 
-<div class="grid cards" markdown="1">
+<div className="grid cards" markdown="1">
 
 -   __NetBox Discovery__
 
@@ -75,7 +75,7 @@ The home of documentation for NetBox [Cloud](Administration%20Console/console-ac
 
 NetBox Labs builds software in the open, with thriving communities. We help develop multiple open source projects, such as NetBox and Orb.
 
-<div class="grid cards" markdown="1">
+<div className="grid cards" markdown="1">
 
 -  <div style={{display: 'flex', alignItems: 'center'}}><img src={require('./images/netbox-favicon.png').default} width="30" style={{marginRight: '10px'}}/> __NetBox Community__</div>
 

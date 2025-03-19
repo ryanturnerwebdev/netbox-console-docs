@@ -1,8 +1,8 @@
 # Network Discovery
 
-<span class="pill pill-cloud">NetBox Cloud</span>
-<span class="pill pill-enterprise">NetBox Enterprise</span>
-<span class="pill pill-community">NetBox Community</span>
+<span className="pill pill-cloud">NetBox Cloud</span>
+<span className="pill pill-enterprise">NetBox Enterprise</span>
+<span className="pill pill-community">NetBox Community</span>
 
 The network discovery backend leverages [NMAP](https://nmap.org/) to scan networks and discover IP information.
 
@@ -69,7 +69,7 @@ orb:
             comments: none
             description: IP discovered by network discovery
         scope:
-          targets: 
+          targets:
             - 192.168.7.32
             - 192.168.7.30-40 # IP range
             - 192.168.7.0/24 # IP subnet
