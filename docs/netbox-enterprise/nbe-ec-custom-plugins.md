@@ -52,11 +52,11 @@ This should create a tarball that contains the `wheelhouse/` directory and every
 
 In the NetBox Enterprise Admin Console (usually port `30000` on your host), click the `Config` tab at the top-center.
 
-![Screenshot: Config Tab](../images/netbox-enterprise/custom-plugins/ent-config-tab.png){ style="max-width: 50%" }
+![Screenshot: Config Tab](../images/netbox-enterprise/custom-plugins/ent-config-tab.png)\{ style="max-width: 50%" \}
 
 Then, scroll down to `Advanced Settings` and make sure `Show Advanced Settings` is checked.
 
-![Screenshot: Advanced Settings](../images/netbox-enterprise/custom-plugins/ent-show-advanced-settings.png){ style="max-width: 60%" }
+![Screenshot: Advanced Settings](../images/netbox-enterprise/custom-plugins/ent-show-advanced-settings.png)\{ style="max-width: 60%" \}
 
 Finally, look for the `Custom Plugins` section, and click the box below `Upload a file` and select your wheelhouse tarball.
 

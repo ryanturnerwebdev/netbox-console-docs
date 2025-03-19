@@ -11,7 +11,9 @@ The ServiceNow Integration supports the following NetBox object types:
 
 ## Object Mappings
 
-<img src="/images/integrations/service-now/service-now-object-map.png" alt="service-now-object-map" width="600px"/>
+<div style={{ maxWidth:'600px', width:'100%' }}>
+	![service-now-object-map](../../images/integrations/service-now/service-now-object-map.png)
+</div>
 
 ## Synchronization Options
 Data can be synchronized in any of the following directions to accomodate many use cases
