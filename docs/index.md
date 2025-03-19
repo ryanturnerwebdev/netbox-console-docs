@@ -9,7 +9,7 @@ The home of documentation for NetBox [Cloud](Administration%20Console/console-ac
 
 <div class="grid cards" markdown="1">
 
-- ![NetBox Light](images/netbox-favicon.png)\{:class="nbl-light-img" width="30"\} ![NetBox Dark](images/netbox-light-favicon.png)\{:class="nbl-dark-img" width="30"\} __NetBox Cloud__
+- <div style={{display: 'flex', alignItems: 'center'}}><img src={require('./images/netbox-favicon.png').default} width="30" style={{marginRight: '10px'}}/> __NetBox Cloud__</div>
 
     All the power and flexibility of NetBox, rock solid and secure.
 
@@ -17,7 +17,8 @@ The home of documentation for NetBox [Cloud](Administration%20Console/console-ac
 
     [Get started with NetBox Cloud](Administration%20Console/console-access.md)
 
-- ![NetBox Light](images/netbox-favicon.png)\{:class="nbl-light-img" width="30"\} ![NetBox Dark](images/netbox-light-favicon.png)\{:class="nbl-dark-img" width="30"\} __NetBox Enterprise__
+
+- <div style={{display: 'flex', alignItems: 'center'}}><img src={require('./images/netbox-favicon.png').default} width="30" style={{marginRight: '10px'}}/> __NetBox Enterprise__</div>
 
     The power of NetBox in your own infrastructure,
 
@@ -76,7 +77,7 @@ NetBox Labs builds software in the open, with thriving communities. We help deve
 
 <div class="grid cards" markdown="1">
 
--  ![NetBox Light](images/netbox-favicon.png)\{:class="nbl-light-img" width="30"\} ![NetBox Dark](images/netbox-light-favicon.png)\{:class="nbl-dark-img" width="30"\} __NetBox Community__
+-  <div style={{display: 'flex', alignItems: 'center'}}><img src={require('./images/netbox-favicon.png').default} width="30" style={{marginRight: '10px'}}/> __NetBox Community__</div>
 
     NetBox exists to empower network engineers. Since its release in 2016, it has become the go-to solution for modeling and documenting network infrastructure for thousands of organizations worldwide.
 
