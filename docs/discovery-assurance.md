@@ -11,7 +11,7 @@
 
 NetBox Discovery enables operators to gather and ingest network and infrastructure information into NetBox to rapidly document the IT footprint within NetBox’s model. The product seamlessly facilitates fast onboarding of infrastructure into NetBox, and accelerates the journey to intent-based automation with NetBox as the source of truth.
 
-NetBox Discovery is powered by Orb’s rock solid distributed agent framework, enabling discovery agents to be deployed quickly and easily in your network. NetBox Discovery agents can be deployed strategically in segmented network environments with strict reachability boundaries, enabling discovery even in environments where central deployment limits reach and visibility. Agents can be fanned out to parallelize discovery workloads, improving performance in large environments. 
+NetBox Discovery is powered by Orb’s rock solid distributed agent framework, enabling discovery agents to be deployed quickly and easily in your network. NetBox Discovery agents can be deployed strategically in segmented network environments with strict reachability boundaries, enabling discovery even in environments where central deployment limits reach and visibility. Agents can be fanned out to parallelize discovery workloads, improving performance in large environments.
 
 ## NetBox Assurance
 

@@ -9,10 +9,10 @@ The following applications are used for various facets of administration:
 
 * [kubectl](https://kubernetes.io/docs/tasks/tools/)\*: CLI for interacting with clusters.
 * [preflight](https://troubleshoot.sh/)\*: CLI for manually running preflight validation checks.
-  Install by running:<br>
+  Install by running:<br/>
   `curl https://krew.sh/preflight | bash`
 * [support-bundle](https://troubleshoot.sh/)\*: CLI for manually generating support bundles.
-  Install by running:<br>
+  Install by running:<br/>
   `curl https://krew.sh/support-bundle | bash`
 * [k9s](https://k9scli.io/): a TUI for managing and viewing cluster resources.
 

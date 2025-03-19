@@ -22,29 +22,29 @@ This feature is included in NetBox Enterprise installs, and can be enabled by in
 ### Backing Up the NetBox Enterprise Installation
 
 1. Navigate to the backup configuration by clicking the _^^Backup settings^^_ link in the **Disaster Recovery** section of the admin console.
-   ![Backup settings](../images/netbox-enterprise/netbox-enterprise-ec-backup-settings.png){ width=75% }
-2. Input your S3 bucket, credentials, endpoint, and region.<br>
-   ![Configure S3](../images/netbox-enterprise/netbox-enterprise-ec-configure-s3.png){ width=75% }
-3. Click **Update storage settings** -- it will spend a few moments validating that your settings work.<br>
-   ![Update storage settings](../images/netbox-enterprise/netbox-enterprise-ec-update-settings.png){ width=75% }
-4. Perform a backup by clicking the **Backups** tab, and then clicking **Start backup**.<br>
+   ![Backup settings](../images/netbox-enterprise/netbox-enterprise-ec-backup-settings.png)\{ width=75% }
+2. Input your S3 bucket, credentials, endpoint, and region.<br />
+   ![Configure S3](../images/netbox-enterprise/netbox-enterprise-ec-configure-s3.png)\{ width=75% }
+3. Click **Update storage settings** -- it will spend a few moments validating that your settings work.<br />
+   ![Update storage settings](../images/netbox-enterprise/netbox-enterprise-ec-update-settings.png)\{ width=75% }
+4. Perform a backup by clicking the **Backups** tab, and then clicking **Start backup**.<br />
    ![Start backup](../images/netbox-enterprise/netbox-enterprise-ec-start-backup.png)
 
 ### Restoring the NetBox Enterprise Installation
 
 1. Download the latest NetBox Enterprise installer following the same instructions you did for a new install, if you haven't already.
 2. Run: `./netbox-enterprise restore`
-3. Enter the same S3 credentials you use for backups.<br>
-   ![S3 Credentials](../images/netbox-enterprise/netbox-enterprise-ec-restore-s3.png){ width=75% }
+3. Enter the same S3 credentials you use for backups.<br />
+   ![S3 Credentials](../images/netbox-enterprise/netbox-enterprise-ec-restore-s3.png)\{ width=75% }
 4. Next, it will take a few minutes to bring up the node.
-   When it's complete, you will be prompted to continue the restore:<br>
+   When it's complete, you will be prompted to continue the restore:<br />
    ![Restore from backup instance?](../images/netbox-enterprise/netbox-enterprise-ec-restore-prompt.png)
 5. Enter `Y` to continue, and the restore will launch the cluster.
 6. (Optional) If you plan to have more than one node in the new cluster, you can go to the admin console and configure them when prompted.
-7. Enter `continue` to finish bringing the NetBox Enterprise application up.<br>
+7. Enter `continue` to finish bringing the NetBox Enterprise application up.<br />
    ![Continue restore](../images/netbox-enterprise/netbox-enterprise-ec-restore-continue.png)
-8. It will take a few more minutes to finish bringing the application up, and then you will see "Application restored!"<br>
-   ![Application restored!](../images/netbox-enterprise/netbox-enterprise-ec-restore-complete.png){ width=90% }<br>
+8. It will take a few more minutes to finish bringing the application up, and then you will see "Application restored!"<br />
+   ![Application restored!](../images/netbox-enterprise/netbox-enterprise-ec-restore-complete.png)\{ width=90% }<br />
    NetBox Enterprise and the Admin Console should now be completely restored and available as normal.
 
 <!-- ### KOTS Install -->
@@ -129,8 +129,8 @@ You just need to put NetBox Enterprise into restore mode first.
 
 1. Put NetBox Enterprise into "Restore Mode" by going to the _Config_ tab and checking the _Enable Restore Mode_ checkbox.
    ![Enable Restore Mode](../images/netbox-enterprise/netbox-enterprise-restore-mode-enable.png)
-2. Click the "Save config" button at the bottom of the form, and then when the admin console prompts you, click "go to updated version".<br>
-   ![Go to updated version](../images/netbox-enterprise/netbox-enterprise-restore-mode-updated-version.png){ width=75% }
+2. Click the "Save config" button at the bottom of the form, and then when the admin console prompts you, click "go to updated version".<br />
+   ![Go to updated version](../images/netbox-enterprise/netbox-enterprise-restore-mode-updated-version.png)\{ width=75% }
 3. Confirm that the _New version available_ at the top denotes it's a config change, and if so click the "Deploy" button.
    ![Deploy](../images/netbox-enterprise/netbox-enterprise-restore-mode-deploy.png)
 

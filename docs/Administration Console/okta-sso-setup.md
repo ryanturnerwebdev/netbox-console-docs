@@ -14,9 +14,9 @@ Within the Okta administration dashboard, navigate to Applications > Application
 
     On the next page, give the app integration a name (e.g. "NetBox Cloud") and specify the sign-in and sign-out URIs. These URIs should follow the formats below:
 
-    - Sign-in URI:   https://{your-domain}.cloud.netboxapp.com/oauth/complete/okta-openidconnect/
-    - Sign-out URI:  https://{your-domain}.cloud.netboxapp.com/oauth/disconnect/okta-openidconnect/
-    
+    - Sign-in URI:   https://\{your-domain\}.cloud.netboxapp.com/oauth/complete/okta-openidconnect/
+    - Sign-out URI:  https://\{your-domain\}.cloud.netboxapp.com/oauth/disconnect/okta-openidconnect/
+
     ![Web app integration](../images/OKTA%20SSO/okta_web_app_integration.png   )
 
     Under "Assignments," select the controlled access setting most appropriate for your organization. Click "Save" to complete the creation.
@@ -34,9 +34,9 @@ Within the Okta administration dashboard, navigate to Applications > Application
 Securely share the following configuration parameters with [NetBox Labs Support](mailto:support@netboxlabs.com), substituting your own values:
 
 REMOTE_AUTH_BACKEND = 'social_core.backends.okta_openidconnect.OktaOpenIdConnect'
-SOCIAL_AUTH_OKTA_OPENIDCONNECT_KEY = '{Client ID}'
-SOCIAL_AUTH_OKTA_OPENIDCONNECT_SECRET = '{Client secret}'
-SOCIAL_AUTH_OKTA_OPENIDCONNECT_API_URL = 'https://{Okta domain}/oauth2/'
+SOCIAL_AUTH_OKTA_OPENIDCONNECT_KEY = '\{Client ID}\'
+SOCIAL_AUTH_OKTA_OPENIDCONNECT_SECRET = '\{Client secret}\'
+SOCIAL_AUTH_OKTA_OPENIDCONNECT_API_URL = 'https://\{Okta domain}/oauth2/'
 
 The support team will add these parameters to your NetBox Cloud instance and confirm when this is ready for testing.
 
