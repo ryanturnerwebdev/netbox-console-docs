@@ -142,7 +142,7 @@ When you are done restoring your data, just follow the same steps, unchecking _E
 
 To restore media, scripts, and reports, you just need to unpack them into the correct directory inside a NetBox container.
 
-!!! note
+:::note
     The backup instructions above back up all three of the `media/`, `scripts/`, and `reports/` subdirectories in one file.
 
     If you are restoring a backup from another NetBox instance, you might need to change the name of the tarball and the path after the `-C` at the end of this command to unpack your backup into the right location.

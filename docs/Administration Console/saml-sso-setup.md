@@ -9,13 +9,13 @@ To facilitate SAML integration, we require the following details from your Ident
 - <u>**Service Provider Entity ID:**</u> The unique identifier of your organization in the SAML ecosystem.
 - <u>**Identity Provider Settings:**</u>
 
-    **entity_id**: This is your IdP's Entity ID obtained from the SAML metadata. 
+    **entity_id**: This is your IdP's Entity ID obtained from the SAML metadata.
 
-    **url**: Your IdP's SSO login URL. 
+    **url**: Your IdP's SSO login URL.
 
-    **x509cert**: The Base64-encoded X.509 certificate used to sign SAML assertions. 
+    **x509cert**: The Base64-encoded X.509 certificate used to sign SAML assertions.
 
-!!! Note
+:::note
     **Preferred Submission Method**: For efficiency and accuracy, please provide your IdP Metadata File. This standardized format ensures all necessary information is included.
 
 ## Configuration Process in NetBox Cloud

@@ -26,7 +26,7 @@ This allows you and your colleagues to stage changes within isolated environment
 
 * A **branch** is an independent copy of the NetBox data model which diverges from main at a set point in time. Any changes to main after that time will not be reflected in the branch. Likewise, changes made within the branch will not be reflected in main.
 
-* Branches are **provisioned** automatically upon creation. The initial state of a branch is identical to the state of main at the time it was provisioned. 
+* Branches are **provisioned** automatically upon creation. The initial state of a branch is identical to the state of main at the time it was provisioned.
 
 * Changes in main can be **synchronized** at any time into a branch. Branches are independent of one another: Changes must be synchronized into each branch individually. This ensures complete isolation among branches.
 
@@ -92,7 +92,7 @@ The plugin can be installed from [PyPI](https://pypi.org/project/netboxlabs-netb
 source /opt/netbox/venv/bin/activate
 ```
 
-!!! note
+:::note
     You may need to modify the `source` command above if your virtual environment has been installed in a different location.
 
 #### 2. Python Package
@@ -117,7 +117,7 @@ PLUGINS = [
 !!! warning
     `netbox_branching` must be the **last** (or only) plugin in the list. Branching support will not be registered for models provided by any plugin appearing later in the list.
 
-!!! note
+:::note
     If there are no plugins already installed, you might need to create this parameter. If so, be sure to define `PLUGINS` as a list _containing_ the plugin name as above, rather than just the name.
 
 #### 4. Configuration

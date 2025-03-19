@@ -12,7 +12,7 @@ The following are the _recommended_ system requirements for a **production** dep
 - 24 GB Memory (RAM)
 - 100 GB SSD free disk space in `/var/lib`
 
-!!! note 
+:::note
     For **non-production** deployments of NetBox Enterprise, the _minimum_ system requirements can be reduced to 4 Virtual CPU (vCPU) and 16 GB Memory (RAM). All other requirements remain the same.
 
 

@@ -45,7 +45,7 @@ All code used in the examples below can be found in the NetBox Learning [git rep
     pip install "pyats[full]"
     ```
 
-    !!! Note
+    :::note
         If you plan to run the example script `ospf_neighbor_table.py` then you will also need to install the `prettytable` library with `pip install prettytable` or you can simply run the command `pip install -r requirements.txt` to install this along with pyATS, Genie and the `contrib` library.
 
     There is also a [PyATS Docker Image](https://developer.cisco.com/codeexchange/github/repo/CiscoTestAutomation/pyats-docker). This command will pull down the container if you don't have it locally and drop you into a Bash shell:

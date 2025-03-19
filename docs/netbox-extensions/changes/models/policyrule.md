@@ -18,7 +18,7 @@ A boolean indicating whether the rule is enabled. Rules are enabled by default.
 
 The minimum number of eligible reviewers which must approve the change in order for the rule to pass.
 
-!!! note
+:::note
     A value of zero may be set to assert that a rule shall always pass, although this is generally not recommended.
 
 ### Reviewer Groups

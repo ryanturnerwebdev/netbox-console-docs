@@ -62,7 +62,7 @@ Finally, look for the `Custom Plugins` section, and click the box below `Upload 
 
 ![Screenshot: Custom Plugins](../images/netbox-enterprise/custom-plugins/ent-custom-plugins.png)
 
-!!! note "Enable Your Plugins"
+:::note "Enable Your Plugins"
     Don't forget to create or update `PLUGINS = []` in the `NetBox Python Configuration Overrides` at the top of the advanced settings to enable your new plugins!
 
 ## Deploy your updated configuration

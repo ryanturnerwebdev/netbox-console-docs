@@ -16,7 +16,7 @@ The user who submitted the change request.
 
 The [policy](./policy.md) which must be met for the change request to be approved.
 
-!!! note
+:::note
     The policy is selected by the change request owner.
 
 ### Branch

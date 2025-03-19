@@ -72,7 +72,7 @@ http://netbox:8000/api/dcim/sites/
 
 The branch is effectively "deactivated" for future API requests by simply omitting the header.
 
-!!! note
+:::note
     The `X-NetBox-Branch` header is required only when making changes to NetBox objects within the context of an active branch. It is **not** required when creating, modifying, or deleting a branch itself.
 
 ## Syncing & Merging Branches

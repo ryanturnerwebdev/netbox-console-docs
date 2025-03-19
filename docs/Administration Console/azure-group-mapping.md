@@ -9,7 +9,7 @@ Changes in Microsoft Entra ID groups are reflected in NetBox Cloud, ensuring up-
 
 If you are already securing access to NetBox Cloud using Entra ID for SSO, and would like use the Group Mapping feature it's easy to get set up. Simply create your groups and permissions in NetBox Cloud, then set up your groups in Entra ID and reach out to the support team at NetBox Labs and we will take care of the group mappings for you to suit your requirements.
 
-!!! note
+:::note
     We’ve made some important updates to the Entra ID user group sync feature that may affect group memberships and permissions of Entra ID SSO users accessing NetBox Cloud. To support enterprise Entra ID environments, we’ve added pagination to retrieve large lists (100+) of membership groups for users. To support NetBox group assignments from Entra ID nested groups, we’ve changed the Microsoft API endpoint used for group retrieval from [`memberOf`](https://learn.microsoft.com/en-us/graph/api/user-list-memberof) to [`transitiveMemberOf`](https://learn.microsoft.com/en-us/graph/api/user-list-transitivememberof).
 
     This means that users will now be made members of NetBox user groups based on the configured group mappings for both direct membership Entra ID groups and transitive Entra ID groups (parent groups of direct membership groups). Under specific conditions, users may gain additional group memberships and permissions. We strongly advise you review your NetBox Cloud and Entra ID user, group and permission configurations to ensure they align to your security requirements.

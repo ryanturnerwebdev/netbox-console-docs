@@ -20,7 +20,7 @@ This key and certificate chain are used for any TLS connections to the cluster, 
 
 If you configured your Admin Console to use a self-signed certificate on install and wish to replace it with your own key, or if you have an existing custom key that needs rotation, you can follow these steps to do so.
 
-!!! note
+:::note
     Ensure you have your private key and a full certificate chain in PEM format.
     If you're using Let's Encrypt, this will be the `privkeyXX.pem` and `fullchainXX.pem` files.
     For other certificate providers, consult their documentation.

@@ -2,7 +2,7 @@
 
 You should be able to follow these instructions for installing NetBox Enterprise in most environments.
 
-!!! Note
+:::note
     The hostname and IP address of the host cannot be changed after installation, and must be finalized before proceeding.
 
 ## Deploying the cluster
@@ -25,7 +25,7 @@ The following steps are required for a NetBox Enterprise installation.
 
       You’ll be requested to create a password for the NetBox Enterprise admin console. A Kubernetes cluster will then be deployed, ready to host all the NetBox application components. The deployment of the cluster is complete with this message:
 
-      ```{.bash .no-copy} 
+      ```{.bash .no-copy}
       Visit the Admin Console to configure and install netbox-enterprise: http://my.netbox-enterprise.host:30000
       ```
 
@@ -56,7 +56,7 @@ Enter the password you created in the installer CLI.
 
 ![Screenshot: Log In](../images/netbox-enterprise/installation/ent-03-login.png){ style="max-width: 75%" }
 
-**Once logged in, you'll be presented with the option to add additional nodes to the cluster.** 
+**Once logged in, you'll be presented with the option to add additional nodes to the cluster.**
 
 **Do not** configure additional nodes, it is currently not supported.
 
@@ -93,7 +93,7 @@ Choose the built-in or external Redis object store:
 
 <!-- Advanced settings to configure plugins and SSO remote authentication, and IPv4/IPv6 compatibility:
   ![Advanced Settings](../images/netbox-enterprise/netbox-enterprise-advanced.png)
-For now, skip `Advanced Settings` 
+For now, skip `Advanced Settings`
   -->
 
 **Finally, accept the terms of service by writing "ACCEPT" (case-insensitive) and you can proceed to the deployment.**

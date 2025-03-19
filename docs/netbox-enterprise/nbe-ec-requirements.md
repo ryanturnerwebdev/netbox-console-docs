@@ -10,7 +10,7 @@ The following are the _recommended_ system requirements for a **production** dep
 - 24 GB Memory (RAM)
 - 100 GB SSD free disk space in `/var/lib`
 
-!!! note
+:::note
     For **non-production** deployments of NetBox Enterprise, the _minimum_ system requirements can be reduced to 4 Virtual CPU (vCPU) and 16 GB Memory (RAM). All other requirements remain the same.
 
 ### Host operating system
@@ -47,7 +47,7 @@ They are required to access various resources used in the NetBox Enterprise inst
 
 Once you have configured your proxy to allow access to the NetBox Enterprise hosts, you will need to pass some additional arguments to the NetBox Enterprise installer when following the [basic installation instructions](./nbe-ec-installation.md).
 
-!!! note
+:::note
     NetBox Enterprise will _not_ inherit proxy settings from the shell environment, they must be explicitly provided on the installation command-line.
 
 * `--http-proxy <proxy-url>` and `--https-proxy <proxy-url>`

@@ -26,7 +26,7 @@ pip install /opt/diode-agent/diode-napalm-agent --no-cache-dir
 
 ### Create a discovery configuration file
 
-The agent requires a configuration file to provide an inventory of devices to be discovered. A sample configuration file is provided with the agent. 
+The agent requires a configuration file to provide an inventory of devices to be discovered. A sample configuration file is provided with the agent.
 
 Create a copy of the sample configuration file:
 ```bash
@@ -35,7 +35,7 @@ cp /opt/diode-agent/diode-napalm-agent/config.sample.yaml /opt/diode-agent/confi
 
 Edit the `config.yaml` to suit the environment:
 
-- The `config` section needs to be updated to reflect the Diode server environment 
+- The `config` section needs to be updated to reflect the Diode server environment
 - The `data` section should include a list of all devices (and their credentials) to be discovered
 
 ```yaml
@@ -66,7 +66,7 @@ diode:
 !!! tip
     The `driver` device attribute is optional. If not specified, the agent will attempt to find a match from NAPALM supported drivers.
 
-!!! note
+:::note
     Detailed information about `optional_args` can be found in the NAPALM [documentation](https://napalm.readthedocs.io/en/latest/support/#optional-arguments).
 
 #### Supported network device drivers
@@ -102,5 +102,3 @@ options:
   -e .env, --env .env   File containing environment variables
   -w N, --workers N     Number of workers to be used
 ```
-
-

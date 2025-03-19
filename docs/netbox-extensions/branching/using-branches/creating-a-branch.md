@@ -2,7 +2,7 @@
 
 First, navigate to Branching > Branches to view the list of any existing branches. Click the "Add" button at top right to create a new branch.
 
-!!! note
+:::note
     If you don't see this button, check that you have permission to create a branch.
 
 Pick a unique name for your branch, and add a description if you like.
