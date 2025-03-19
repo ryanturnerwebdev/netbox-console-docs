@@ -11,7 +11,7 @@ Pick a unique name for your branch, and add a description if you like.
 
 When a branch is first created, its status will show as "new," indicating that its corresponding PostgreSQL schema has not yet been provisioned in the database. A background job is queued automatically to perform this task, which my take a few seconds to several minutes, depending on the size of your database.
 
-!!! tip
+:::tip
     You can check on the status of the provisioning job under the "Jobs" tab of the branch view.
 
 Once the branch's schema has been provisioned, the status will be updated to "ready," and the branch will become available to activate. You can activate a branch by selecting it from the dropdown menu at top right.

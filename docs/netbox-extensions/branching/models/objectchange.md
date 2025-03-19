@@ -4,5 +4,5 @@ This model serves as a [proxy](https://docs.djangoproject.com/en/stable/topics/d
 
 It does not introduce any new database fields. Rather, it implements several functions which assist in the application and reversal of changes from a [branch](./branch.md) (namely `apply()` and `undo()`).
 
-!!! tip
+:::tip
     There is typically no need to employ this model in external code. Use the NetBox's native `ObjectChange` model instead.

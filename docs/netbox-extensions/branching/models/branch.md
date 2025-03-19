@@ -36,7 +36,7 @@ The current status of the branch. This must be one of the following values.
 
 The time at which this branch was most recently synchronized with main. This value will be null if the branch has never been synchronized.
 
-!!! tip
+:::tip
     Reference the `synced_time` attribute on a branch to return either the branch's `last_sync` time or, if null, its creation time.
 
 ### Merged Time

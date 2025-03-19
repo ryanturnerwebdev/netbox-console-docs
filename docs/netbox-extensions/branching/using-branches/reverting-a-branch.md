@@ -9,7 +9,7 @@ Before reverting a branch, review the changes listed under its "Merged Changes" 
 
 To revert a merged branch, click the "Revert" button. You will be asked to review the changes and to acknowledge any conflicts before executing the reversion. Continuing with the merge will queue a background job to carry out reverting the changes. When the job is running, the branch's status will show "reverting."
 
-!!! tip
+:::tip
     You can check on the status of the reversion job under the "Jobs" tab of the branch view.
 
 Once the reversion has completed, the branch will be returned to its pre-merge status, and will again be available to activate. Its event history will show that the branch has been reverted.

@@ -60,10 +60,10 @@ diode:
             enable_password: ${ARISTA_PASSWORD}
 ```
 
-!!! tip
+:::tip
     Variables (using `${ENV}` syntax) can be referenced in the configuration file from environmental variables or from a provided `.env` file.
 
-!!! tip
+:::tip
     The `driver` device attribute is optional. If not specified, the agent will attempt to find a match from NAPALM supported drivers.
 
 :::note

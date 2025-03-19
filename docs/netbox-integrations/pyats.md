@@ -39,7 +39,7 @@ All code used in the examples below can be found in the NetBox Learning [git rep
     pip install pyats[full]
     ```
 
-    !!! tip
+    :::tip
         If you are using Zsh on a Mac then you need to quote the install string.
     ```
     pip install "pyats[full]"

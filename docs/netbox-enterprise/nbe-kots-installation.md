@@ -49,7 +49,7 @@ The helm chart was successfully installed when you see this:
 
 Access the NetBox Enterprise Admin Console by opening the provided URL in a browser.
 
-!!! Tip
+:::tip
     If you are connecting to the cluster over the network, you might need to configure port forwarding to connect to the Admin Console: `kubectl port-forward -n <namespace> svc/kotsadm --address 0.0.0.0  3000:3000`
 
 
@@ -93,6 +93,5 @@ The `Unavailable` status will change to `Ready` once the deployment is complete 
 
 NetBox Enterprise should now be fully deployed.
 
-!!! Tip
+:::tip
     Although deployment is complete, you may still need to configure your ingress controller before you can connect without having to use port-forwarding. NetBox Enterprise is configured to expose a ClusterIP service with the name netbox-enterprise on port 80.
-    

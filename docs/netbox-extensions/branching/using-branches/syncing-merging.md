@@ -8,7 +8,7 @@ To synchronize a branch, click the "Sync" button. (If this button is not visible
 
 While a branch is being synchronized, its status will show "synchronizing."
 
-!!! tip
+:::tip
     You can check on the status of the syncing job under the "Jobs" tab of the branch view.
 
 ## Merging a Branch
@@ -19,7 +19,7 @@ To merge a branch, click the "Merge" button. (If this button is not visible, ver
 
 While a branch is being merged, its status will show "merging."
 
-!!! tip
+:::tip
     You can check on the status of the merging job under the "Jobs" tab of the branch view.
 
 Once a branch has been merged, it can be [reverted](./reverting-a-branch.md), archived, or deleted. Archiving a branch removes its associated schema from the PostgreSQL database to deallocate space. An archived branch cannot be restored, however the branch record is retained for future reference.

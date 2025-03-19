@@ -4,7 +4,7 @@ Unlike the web UI, where a user's selected branch remains active until it is cha
 X-NetBox-Branch: $SCHEMA_ID
 ```
 
-!!! tip "Schema IDs"
+:::tip "Schema IDs"
     The schema ID for a branch can be found in its REST API representation or on its detail view in the web UI. This is a pseudorandom eight-character alphanumeric identifier generated automatically when a branch is created. Note that the value passed to the HTTP header **does not include** the `branch_` prefix, which comprises part of the schema's name in the underlying database.
 
 The example below returns all site objects that exist within the branch with schema ID `td5smq0f`:
