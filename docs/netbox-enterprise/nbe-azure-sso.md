@@ -13,9 +13,9 @@ Under the Microsoft Entra ID dashboard, navigate to **Add** > **App registration
 
     Enter a name for the registration (e.g. "NetBox Enterprise") and ensure that the "single tenant" option is selected.
 
-    Under "Redirect URI", select "Web" for the platform and enter the path to your NetBox Enterprise installation, ending with /oauth/complete/azuread-oauth2/. 
+    Under "Redirect URI", select "Web" for the platform and enter the path to your NetBox Enterprise installation, ending with /oauth/complete/azuread-oauth2/.
 
-    Eg. https://{your-domain}.com/oauth/complete/azuread-oauth2/
+    Eg. https://\{your-domain\}.com/oauth/complete/azuread-oauth2/
 
     ![Add an app registration](../images/Azure%20SSO/azure_ad_app_registration.png)
 
@@ -44,19 +44,19 @@ Under the Microsoft Entra ID dashboard, navigate to **Add** > **App registration
 
 ## NetBox Enterprise Configuration
 
-After completing the app registration, navigate to the `Config tab` in the NetBox Enterprise admin console, scroll down to `Advanced Settings` and tick the `Show Advanced Settings` check box. 
+After completing the app registration, navigate to the `Config tab` in the NetBox Enterprise admin console, scroll down to `Advanced Settings` and tick the `Show Advanced Settings` check box.
 
 ![advanced settings](../images/netbox-enterprise/advanced_settings.png)
 
 Then, in the  the `NetBox Python Configuration Overrides` field paste the following value from the previous steps:
 
 ```shell
-REMOTE_AUTH_BACKEND = 'social_core.backends.azuread.AzureADOAuth2' 
-SOCIAL_AUTH_AZUREAD_OAUTH2_KEY = 'APPLICATION_ID' 
+REMOTE_AUTH_BACKEND = 'social_core.backends.azuread.AzureADOAuth2'
+SOCIAL_AUTH_AZUREAD_OAUTH2_KEY = 'APPLICATION_ID'
 SOCIAL_AUTH_AZUREAD_OAUTH2_SECRET = 'SECRET_VALUE'
 ```
 
-Once added, scroll down to the bottom of the page and click `Save config`. Follow the prompt to `Go to updated version` and click the `Deploy` button to deploy the updated version of your app with the configuration changes. 
+Once added, scroll down to the bottom of the page and click `Save config`. Follow the prompt to `Go to updated version` and click the `Deploy` button to deploy the updated version of your app with the configuration changes.
 
 ## Testing
 Open your NetBox Instance once it is back up in the `Ready` state. Log out of NetBox instance if already authenticated, and click the "Log In" button at top right. You should see the normal login form as well as an option to authenticate using Entra ID. Click that link.
@@ -73,7 +73,7 @@ This user account has been replicated locally to NetBox Enterprose, and can now 
 
 ## Troubleshooting
 ### Redirect URI does not Match
-Entra ID requires that the authenticating client request a redirect URI that matches what you've configured for the app in step two. This URI must begin with https:// 
+Entra ID requires that the authenticating client request a redirect URI that matches what you've configured for the app in step two. This URI must begin with https://
 
 ### Not Logged in After Authenticating
 If you are redirected to the NetBox Enterprise UI after authenticating successfully, but are not logged in, double-check the configured backend and app registration. The instructions in this guide pertain only to the `azuread.AzureADOAuth2` backend using a single-tenant app registration.
