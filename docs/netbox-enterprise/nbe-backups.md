@@ -62,7 +62,7 @@ Besides disaster recovery, it is also a good idea to keep backups of your data i
 
 Backing up NetBox Enterprise's data manually is reasonably simple, and Kubernetes makes it easy to access them from the command-line.
 
-!!! warning "Before You Back Up: Accessing Your Cluster"
+:::warning "Before You Back Up: Accessing Your Cluster"
     Before you can back anything up, you must first make sure you can access the cluster on the command line.
 
     See the [advanced tools documentation](./nbe-troubleshooting.md#accessing-your-cluster-from-the-command-line) for details on connecting to your NetBox Enterprise cluster.

@@ -45,7 +45,7 @@ export NETBOX_TO_DIODE_API_KEY=$(head -c20 </dev/urandom|xxd -p); env | grep NET
 export DIODE_API_KEY=$(head -c20 </dev/urandom|xxd -p); env | grep DIODE_API_KEY
 ```
 
-!!! warning
+:::warning
 
     Store the API key strings in a safe place as they will be needed to configure the Diode server
 

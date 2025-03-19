@@ -114,7 +114,7 @@ PLUGINS = [
 ]
 ```
 
-!!! warning
+:::warning
     `netbox_branching` must be the **last** (or only) plugin in the list. Branching support will not be registered for models provided by any plugin appearing later in the list.
 
 :::note

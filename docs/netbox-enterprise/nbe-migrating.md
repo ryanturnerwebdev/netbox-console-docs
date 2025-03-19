@@ -3,7 +3,7 @@
 Migrating from NetBox open source to NetBox Labs Enterprise is a simple and efficient process. Because NetBox Enterprise is built on the same open source platform, database imports can be completed quickly, enabling a smooth transition.
 
 ## Database
-!!! warning "Compatibility Check"
+:::warning "Compatibility Check"
     The database being migrated must match the major and minor version of the NetBox deployed with NetBox Enterprise. NetBox Labs support can upgrade older databases on your behalf to assist in the migration process.
 
 ### Exporting the Open Source Database

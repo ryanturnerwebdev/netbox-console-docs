@@ -80,7 +80,7 @@ _It is recommended that you set the number of replicas to `1` until initial inst
 
 ![Screenshot: Replicas and Resources](../images/netbox-enterprise/installation/ent-06-replicas-and-resources.png){ style="max-width: 75%" }
 
-!!! warning "Be Advised"
+:::warning "Be Advised"
     Do not enable Restore Mode when initially setting up NetBox or the installation will fail.
 
 **Configure your PostgreSQL database and Redis cache:**
