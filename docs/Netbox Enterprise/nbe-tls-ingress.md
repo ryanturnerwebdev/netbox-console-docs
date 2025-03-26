@@ -1,5 +1,5 @@
 ---
-title: NBE Tls Ingress
+title: NBE TLS Ingress
 ---
 # TLS and Ingress: Accessing NetBox Enterprise
 

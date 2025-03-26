@@ -1,5 +1,5 @@
 ---
-title: NBE Ec Custom Plugins
+title: NBE EC Custom Plugins
 ---
 # Installing Custom NetBox Plugins
 

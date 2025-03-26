@@ -1,4 +1,4 @@
 ---
-title: Ipsec VPN Tunnels Setup
+title: IPSEC VPN Tunnels Setup
 ---
 ## Coming Soon

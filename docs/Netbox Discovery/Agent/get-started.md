@@ -1,5 +1,6 @@
 ---
 title: Get Started
+sidebar_position: 1
 ---
 <span className="pill pill-cloud">NetBox Cloud</span>
 <span className="pill pill-enterprise">NetBox Enterprise</span>

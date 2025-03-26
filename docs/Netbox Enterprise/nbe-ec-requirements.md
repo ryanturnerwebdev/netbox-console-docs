@@ -1,5 +1,5 @@
 ---
-title: NBE Ec Requirements
+title: NBE EC Requirements
 ---
 # NetBox Enterprise Requirements
 

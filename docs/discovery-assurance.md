@@ -5,7 +5,7 @@ title: Discovery Assurance
 <span className="pill pill-enterprise">NetBox Enterprise</span>
 <span className="pill pill-community">NetBox Community</span>
 
-![reference architecture](netbox-discovery/images/discovery-assurance.png)
+![reference architecture](Netbox Discovery/images/discovery-assurance.png)
 
 ## NetBox Discovery
 

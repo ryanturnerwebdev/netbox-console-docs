@@ -1,5 +1,5 @@
 ---
-title: Index
+title: Netbox Discovery
 ---
 <span className="pill pill-cloud">NetBox Cloud</span>
 <span className="pill pill-enterprise">NetBox Enterprise</span>

@@ -1,5 +1,5 @@
 ---
-title: NBE Ldap
+title: NBE LDAP
 ---
 # LDAP Configuration for NetBox Enterprise
 

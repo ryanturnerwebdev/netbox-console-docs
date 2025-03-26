@@ -1,5 +1,5 @@
 ---
-title: NBE Ec Installation
+title: NBE EC Installation
 ---
 # NetBox Enterprise Installation
 
