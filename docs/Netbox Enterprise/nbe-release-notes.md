@@ -1,3 +1,6 @@
+---
+title: NBE Release Notes
+---
 # NetBox Enterprise 1.x Release Notes
 
 ### 1.8.0

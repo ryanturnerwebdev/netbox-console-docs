@@ -1,3 +1,6 @@
+---
+title: Servicenow Integration
+---
 # ServiceNow Integration
 
 The ServiceNow Integration supports the following NetBox object types:

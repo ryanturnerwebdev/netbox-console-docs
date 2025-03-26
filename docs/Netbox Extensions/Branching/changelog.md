@@ -1,3 +1,6 @@
+---
+title: Changelog
+---
 # Change Log
 
 ## v0.5.2

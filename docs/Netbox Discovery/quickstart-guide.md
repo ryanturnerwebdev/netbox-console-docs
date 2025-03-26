@@ -1,3 +1,6 @@
+---
+title: Quickstart Guide
+---
 Looking to try NetBox Discovery as quickly and easily as possible? The [Quickstart Guide](https://netboxlabs.com/blog/netbox-discovery-quickstart-guide/) on the NetBox Labs blog has you covered! In a few commands you will install and pre-configure everything you need to start experimenting:
 
 - NetBox

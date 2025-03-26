@@ -1,3 +1,6 @@
+---
+title: Discovery Assurance
+---
 <span className="pill pill-cloud">NetBox Cloud</span>
 <span className="pill pill-enterprise">NetBox Enterprise</span>
 <span className="pill pill-community">NetBox Community</span>

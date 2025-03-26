@@ -1,3 +1,6 @@
+---
+title: NBE Azure Group Mapping
+---
 # NetBox Enterprise Entra ID Group Mapping
 Place the following in configuration overrides python section
 

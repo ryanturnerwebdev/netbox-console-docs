@@ -1,3 +1,6 @@
+---
+title: Configuration
+---
 # Configuration Parameters
 
 The following plugin configuration parameters are available.

@@ -1,3 +1,6 @@
+---
+title: Diode Plugin
+---
 :::info
     The following instructions assume you have installed NetBox in the `/opt/netbox` directory. Adjust instructions as necessary if you've installed NetBox in a different directory.
 

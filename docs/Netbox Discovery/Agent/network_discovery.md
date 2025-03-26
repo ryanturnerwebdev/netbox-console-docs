@@ -1,3 +1,6 @@
+---
+title: Network Discovery
+---
 # Network Discovery
 
 <span className="pill pill-cloud">NetBox Cloud</span>

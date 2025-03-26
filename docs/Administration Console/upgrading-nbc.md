@@ -1,3 +1,6 @@
+---
+title: Upgrading NBC
+---
 # Upgrading NetBox Cloud
 
 To safely and easily upgrade your NetBox Cloud instance without worrying about any Plugin compatibility issues, follow the steps outlined below or watch the video instructions: 

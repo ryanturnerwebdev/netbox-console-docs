@@ -1,3 +1,6 @@
+---
+title: Syncing Merging
+---
 # Syncing & Merging Changes
 
 ## Syncing a Branch

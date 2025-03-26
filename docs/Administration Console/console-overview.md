@@ -1,3 +1,6 @@
+---
+title: Console Overview
+---
 # NetBox Cloud: Administrative Console Overview
 
 ## Console Access

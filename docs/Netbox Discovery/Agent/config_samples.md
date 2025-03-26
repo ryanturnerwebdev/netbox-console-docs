@@ -1,3 +1,6 @@
+---
+title: Config Samples
+---
 # Configuration Samples
 
 <span className="pill pill-cloud">NetBox Cloud</span>

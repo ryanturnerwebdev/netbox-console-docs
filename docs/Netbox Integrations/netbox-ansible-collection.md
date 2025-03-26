@@ -1,3 +1,6 @@
+---
+title: Netbox Ansible Collection
+---
 # NetBox Integrations
 
 ## NetBox Ansible Collection - Quick Start

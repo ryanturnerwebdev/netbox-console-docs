@@ -1,3 +1,6 @@
+---
+title: Diode Get Started
+---
 # Get started
 
 ## Components

@@ -1,3 +1,6 @@
+---
+title: Managing Hostnames
+---
 # Managing NetBox Cloud Hostnames
 
 :::info

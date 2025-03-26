@@ -1,3 +1,6 @@
+---
+title: Netbox Discovery Agent
+---
 # NetBox Discovery agent
 
 <span className="pill pill-cloud">NetBox Cloud</span>

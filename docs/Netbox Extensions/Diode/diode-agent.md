@@ -1,3 +1,6 @@
+---
+title: Diode Agent
+---
 The Diode Agent is a lightweight **network device discovery** tool that uses [NAPALM](https://github.com/napalm-automation/napalm) to streamline data entry into NetBox through the Diode ingestion service. The following is a basic set of instructions to get started using Diode Agent on a local machine.
 
 ### Requirements

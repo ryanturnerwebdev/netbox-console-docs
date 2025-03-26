@@ -1,3 +1,6 @@
+---
+title: Okta Group Mapping
+---
 # Group Mapping For Okta Single Sign-On (SSO)
 
 Upgrade your Single Sign-On experience with Group Mapping for Okta SSO – a smarter, more secure way to manage user access. The Group Mapping feature for Okta Single Sign-On, streamlines the synchronization of group memberships from Okta to groups in NetBox Cloud, allowing you to align your user access efficiently and accurately. 

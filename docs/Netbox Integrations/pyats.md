@@ -1,3 +1,6 @@
+---
+title: Pyats
+---
 # Getting Started With NetBox, PyATS and Genie
 
 :::info "Learn More"

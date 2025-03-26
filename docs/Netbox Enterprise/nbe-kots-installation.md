@@ -1,3 +1,6 @@
+---
+title: NBE KOTS Installation
+---
 # NetBox Enterprise KOTS Installation
 
 ### Kubernetes dependencies

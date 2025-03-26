@@ -1,3 +1,6 @@
+---
+title: Branch
+---
 # Branches
 
 A branch represents a divergent state from the main database.

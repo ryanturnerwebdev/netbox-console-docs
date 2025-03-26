@@ -1,3 +1,6 @@
+---
+title: Console Access
+---
 # NetBox Cloud
 
 ## Setting up Console Access

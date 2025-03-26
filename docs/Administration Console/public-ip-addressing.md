@@ -1,3 +1,6 @@
+---
+title: Public IP Addressing
+---
 # NetBox Cloud Public IP Addresses
 
 ## Traffic Originating From NetBox Cloud

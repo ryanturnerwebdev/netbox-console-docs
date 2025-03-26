@@ -1,3 +1,6 @@
+---
+title: Configuration
+---
 # Configuration Parameters
 
 ## `exempt_models`

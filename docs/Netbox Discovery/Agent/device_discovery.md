@@ -1,3 +1,6 @@
+---
+title: Device Discovery
+---
 # Device Discovery
 
 <span className="pill pill-cloud">NetBox Cloud</span>

@@ -1,3 +1,6 @@
+---
+title: Saml SSO Setup
+---
 # NetBox Cloud SAML Configuration Guide
 
 ## Overview

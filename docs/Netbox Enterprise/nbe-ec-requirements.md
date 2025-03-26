@@ -1,3 +1,6 @@
+---
+title: NBE Ec Requirements
+---
 # NetBox Enterprise Requirements
 
 ### Host system requirements

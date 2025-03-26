@@ -1,3 +1,6 @@
+---
+title: NBE Tls Ingress
+---
 # TLS and Ingress: Accessing NetBox Enterprise
 
 ## NetBox Enterprise Installs

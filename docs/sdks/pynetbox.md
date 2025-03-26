@@ -1,3 +1,6 @@
+---
+title: Pynetbox
+---
 # NetBox SDKs
 
 ## Pynetbox

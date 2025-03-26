@@ -1,3 +1,6 @@
+---
+title: NBE KOTS Requirements
+---
 # NetBox Enterprise KOTS Requirements
 
 ### System requirements

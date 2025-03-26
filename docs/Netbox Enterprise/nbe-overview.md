@@ -1,3 +1,6 @@
+---
+title: NBE Overview
+---
 # NetBox Enterprise
 
 ## Overview

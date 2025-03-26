@@ -1,3 +1,6 @@
+---
+title: Diode
+---
 # Diode
 
 :::info "Currently in Public Preview"
