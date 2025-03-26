@@ -30,4 +30,4 @@ During the Public Preview, products or features are made available to early adop
 ### General Availability
 Once a product or feature reaches General Availability, it is available to all customers at the appropriate tier, marking its full release. The risk associated with using these products or features is low, as they are considered stable and reliable. Full support is provided at this stage, and documentation is comprehensive and publicly available.
 
-Please don’t hesitate to [contact us](mailto:info@netboxlabs.com) if you have any questions about this or you would like to discuss getting access to **Private Preview** or **Public Preview** products or features.  
+Please don’t hesitate to [contact us](mailto:info@netboxlabs.com) if you have any questions about this or you would like to discuss getting access to **Private Preview** or **Public Preview** products or features.
