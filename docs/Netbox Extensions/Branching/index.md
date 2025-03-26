@@ -39,11 +39,11 @@ This allows you and your colleagues to stage changes within isolated environment
 
 ## Workflow
 
-The first step is to [create a new branch](./using-branches/creating-a-branch.md). Upon creation, a background job is automatically queued to provision a dedicated PostgreSQL schema for the branch. When provisioning is complete, the branch's status is updated to "ready."
+The first step is to [create a new branch](./Using Branches/creating-a-branch.md). Upon creation, a background job is automatically queued to provision a dedicated PostgreSQL schema for the branch. When provisioning is complete, the branch's status is updated to "ready."
 
-Users can now activate the branch and begin making changes within it. These changes will be contained to the branch, and will not impact main. Likewise, any changes to main will not be reflected in the branch until it has been [synchronized](./using-branches/syncing-merging.md#syncing-a-branch) by a user. A branch may be synchronized repeatedly to keep it up to date with main over time.
+Users can now activate the branch and begin making changes within it. These changes will be contained to the branch, and will not impact main. Likewise, any changes to main will not be reflected in the branch until it has been [synchronized](./Using Branches/syncing-merging.md#syncing-a-branch) by a user. A branch may be synchronized repeatedly to keep it up to date with main over time.
 
-Once work in the branch has been completed, it can be [merged](./using-branches/syncing-merging.md#merging-a-branch) into main.
+Once work in the branch has been completed, it can be [merged](./Using Branches/syncing-merging.md#merging-a-branch) into main.
 
 ```mermaid
 sequenceDiagram

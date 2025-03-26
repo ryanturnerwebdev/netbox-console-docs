@@ -24,7 +24,7 @@ NetBox Assurance continuously compares the documented or intended network state 
 - **Incident Prevention**: Identify and address deviations before they cause major disruptions.
 
 ## Support and Resources
-- **Documentation**: Until NetBox Assurance is officially released, please refer to the [Diode](../netbox-extensions/diode/index.md) project documentation.
+- **Documentation**: Until NetBox Assurance is officially released, please refer to the [Diode](../Netbox Extensions/diode/index.md) project documentation.
 - **Community Support**: Connect with the community on [Slack](https://netdev.chat/) in the `#netbox` channel.
 
 ---

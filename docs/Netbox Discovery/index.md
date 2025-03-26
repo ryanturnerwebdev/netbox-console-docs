@@ -25,7 +25,7 @@ NetBox Discovery leverages network protocols (such as SSH, ICMP, UDP, TCP) to di
 - **Network Audits**: Perform network audits for compliance and troubleshooting.
 
 ## Support and Resources
-- **Documentation**: Get started with the NetBox Discovery agent [documentation](agent/index.md).
+- **Documentation**: Get started with the NetBox Discovery agent [documentation](Agent/index.md).
 - **GitHub Repository**: Find the NetBox Discovery agent [here](https://github.com/netboxlabs/orb-agent).
 - **Community Support**: Connect with the community on [Slack](https://netdev.chat/) in the `#netbox` channel.
 
