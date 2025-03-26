@@ -1,4 +1,7 @@
 ---
+title: NetBox Labs Documentation
+sidebar_label: "Home"
+sidebar_position: 1
 hide:
   - navigation
   - toc
